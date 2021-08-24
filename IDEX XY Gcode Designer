@@ -1,0 +1,107 @@
+customGCode(`M140 S60`)
+customGCode(`G28 `)
+customGCode(`M83 `)
+customGCode(`M190 S60`)
+customGCode(`M104 T1 S160`)
+customGCode(`M109 T0 S210`)
+customGCode(`T0 `)
+customGCode(`G0 Z0 `)
+
+lineCartesian(50, 100, 0, R0, R50, R0, Pr, 0.4, 0.2)
+lineCartesian(R0, R0, R0, R1, R0, R0, Pr, 0.4, 0.2)
+lineCartesian(R0, R0, R0, R0, R-50, R0, Pr, 0.4, 0.2)
+lineCartesian(R0, R0, R0, R1, R0, R0, Pr, 0.4, 0.2)
+repeatCartesian('10-13', 2, 0, 0, 4)
+
+
+
+
+
+lineCartesian(100,150,0,R5,R0,R0,Pr, 0.4, 0.2)
+lineCartesian(R0,R0,R0,R-5,R0,R0,Tr, 0.4, 0.2)
+lineCartesian(R0,R0,R0,R0,R-2,R0,Pr, 0.4, 0.2)
+repeatCartesian('20-23', 0, -2, 0, 22)
+
+
+
+
+
+
+lineCartesian(110, 90, R0, R0,  R5,  R0, Pr, 0.4, 0.2)
+lineCartesian( R0, R0, R0, R0, R-5,  R0, Tr, 0.4, 0.2)
+lineCartesian( R0, R0, R0, R2,  R0,  R0, Pr, 0.4, 0.2)
+repeatCartesian('30-33', 2, 0, 0, 22)
+
+
+
+
+
+
+lineCartesian(R0,R0,R0,R0,85,R0,Tr, 0.4, 0.2)
+lineCartesian(R0,R0,R0,132,R0,R0,Tr, 0.4, 0.2)
+lineCartesian(R0,R0,R0,R0,R5,R0,Pr, 0.4, 0.2)
+lineCartesian(R0,R0,R0,R0,R-5,R0,Tr, 0.4, 0.2)
+
+
+
+
+
+
+lineCartesian(R0,R0,R0,95,R0,R0,Tr, 0.4, 0.2)
+lineCartesian(R0,R0,R0,R0,128,R0,Tr, 0.4, 0.2)
+lineCartesian(R0,R0,R0,R5,R0,R0,Pr, 0.4, 0.2)
+lineCartesian(R0,R0,R0,R-5,R0,R0,Pr, 0.4, 0.2)
+lineCartesian(R0,R0,R0,R0,R0,R1,Tr, 0.4, 0.2)
+
+
+
+
+
+customGCode(`T1 `)
+customGCode(`M109 T1 S220`)
+customGCode(`G0 Z0.5`)
+
+
+
+
+
+
+
+lineCartesian(180, 100, 0, R0, R50, R0, Pr, 0.4, 0.2)
+lineCartesian(R0, R0, R0, R-1, R0, R0, Pr, 0.4, 0.2)
+lineCartesian(R0, R0, R0, R0, R-50, R0, Pr, 0.4, 0.2)
+lineCartesian(R0, R0, R0, R-1, R0, R0, Pr, 0.4, 0.2)
+repeatCartesian('70-74', -2, 0, 0, 8)
+
+
+
+
+
+lineCartesian(110, 149, R0, R-5,    R0,  R0, Pr, 0.4, 0.2)
+lineCartesian( R0, R0, R0,  R5,    R0,  R0, Tr, 0.4, 0.2)
+lineCartesian( R0, R0, R0, R0,  R-2.1,  R0, Pr, 0.4, 0.2)
+repeatCartesian('80-83', 0, -2.1, 0, 20)
+
+
+
+
+
+
+lineCartesian(111, 100, R0, R0,   R-5,  R0, Pr, 0.4, 0.2)
+lineCartesian( R0,  R0, R0, R0,    R5,  R0, Tr, 0.4, 0.2)
+lineCartesian( R0,  R0, R0, R2.1,  R0,  R0, Pr, 0.4, 0.2)
+repeatCartesian('90-92', 2.1, 0, 0, 20)
+
+
+
+
+
+
+lineCartesian( 132,  105, R0, R0,  R-5,  R0, Pr, 0.4, 0.2)
+lineCartesian( 115,  128, R0, R-5,  R0,  R0, Pr, 0.4, 0.2)
+lineCartesian( R0,  R0 , R0, R0,  R0,  R1, Tr, 0.4, 0.2)
+
+customGCode(`T0 `)
+
+
+
